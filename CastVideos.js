@@ -26,7 +26,7 @@ import {
 const DEMO_MODE = false;
 
 /** @const {string} Media source root URL */
-const MEDIA_SOURCE_ROOT = 'ttps://cast4.my-control-panel.com/proxy/james129/';
+const MEDIA_SOURCE_ROOT = 'https://cast4.my-control-panel.com/proxy/james129/';
 
 /**
  * Controls if Ads are enabled. Controlled by radio button.
@@ -168,7 +168,7 @@ CastPlayer.prototype.initializeCastPlayer = function () {
   // Set the receiver application ID to your own (created in the
   // Google Cast Developer Console), or optionally
   // use the chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID
-  options.receiverApplicationId = 'C0868879';
+  options.receiverApplicationId = chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID;
 
   // Auto join policy can be one of the following three:
   // ORIGIN_SCOPED - Auto connect from same appId and page origin

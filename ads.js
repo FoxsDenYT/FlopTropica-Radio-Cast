@@ -22,6 +22,11 @@
  */
 let breakClipsJSON = [];
 
+/**
+ * Sample breaks json objects
+ */
+let breaksJSON = [];
+
 export {
   breakClipsJSON,
   breaksJSON

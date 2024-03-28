@@ -26,7 +26,7 @@ import {
 const DEMO_MODE = false;
 
 /** @const {string} Media source root URL */
-const MEDIA_SOURCE_ROOT = 'https://storage.googleapis.com/cpe-sample-media/content/';
+const MEDIA_SOURCE_ROOT = 'ttps://cast4.my-control-panel.com/proxy/james129/';
 
 /**
  * Controls if Ads are enabled. Controlled by radio button.
@@ -38,7 +38,7 @@ let ENABLE_ADS = false;
  * Controls if Live stream is played. Controlled by radio button.
  * @type {boolean}
  */
-let ENABLE_LIVE = false;
+let ENABLE_LIVE = true;
 
 /**
  * Buffer to decide if the live indicator should be displayed to show that

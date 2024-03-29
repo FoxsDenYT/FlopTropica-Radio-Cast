@@ -21,7 +21,7 @@
  * @const
  */
 var MEDIA_SOURCE_ROOT =
-    'https://cast4.my-control-panel.com/proxy/james129/';
+    'https://floptropica.com/wp-content/uploads/2023/11/';
 /**
  * Width of progress bar in pixel
  * @const
@@ -86,7 +86,7 @@ var CastPlayer = function() {
     this.mediaContents = null;
 
     /** @type {boolean} Fullscreen mode on/off */
-    this.fullscreen = false;
+    this.fullscreen = true;
 
     /** @type {function()} */
     this.incrementMediaTimeHandler = this.incrementMediaTime.bind(this);
@@ -103,7 +103,7 @@ CastPlayer.prototype.initializeCastPlayer = function() {
     // Set the receiver application ID to your own (created in the
     // Google Cast Developer Console), or optionally
     // use the chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID
-    options.receiverApplicationId = 'C0868879';
+    options.receiverApplicationId = chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID;
 
     // Auto join policy can be one of the following three:
     // ORIGIN_SCOPED - Auto connect from same appId and page origin
@@ -424,7 +424,7 @@ CastPlayer.prototype.setupRemotePlayer = function () {
     playerTarget.load = function (mediaIndex) {
         console.log('Loading...' + this.mediaContents[mediaIndex]['title']);
         var mediaInfo = new chrome.cast.media.MediaInfo(
-            this.mediaContents[mediaIndex]['sources'][0], 'video/mp4');
+            this.mediaContents[mediaIndex]['sources'][0], 'audio/mpeg');
 
         mediaInfo.metadata = new chrome.cast.media.GenericMediaMetadata();
         mediaInfo.metadata.metadataType = chrome.cast.media.MetadataType.GENERIC;
@@ -937,7 +937,7 @@ var mediaJSON = { 'categories' : [{ 'name' : 'Movies',
         { 'description' : "FlopRadio is proudly funded by the Floptropican Government as part of the media infrastructure support program.",
             'sources' : ['https://cast4.my-control-panel.com/proxy/james129/stream'],
             'subtitle' : 'By Floptropica Government (floptropica.com)',
-            'thumb' : 'https://floptropica.com/wp-content/uploads/2023/11/cropped-aurelien-grimpard-KDsV8jga2bc-unsplash-scaled-1-1536x864.jpg',
+            'thumb' : 'cropped-aurelien-grimpard-KDsV8jga2bc-unsplash-scaled-1-1536x864.jpg',
             'title' : 'Floptropica Radio'
         }
     ]}]};

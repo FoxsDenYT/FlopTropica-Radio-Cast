@@ -937,7 +937,7 @@ var mediaJSON = { 'categories' : [{ 'name' : 'Movies',
         { 'description' : "FlopRadio is proudly funded by the Floptropican Government as part of the media infrastructure support program.",
             'sources' : ['https://cast4.my-control-panel.com/proxy/james129/stream'],
             'subtitle' : 'By Floptropica Government (floptropica.com)',
-            'thumb' : 'cropped-aurelien-grimpard-KDsV8jga2bc-unsplash-scaled-1-1536x864.jpg',
+            'thumb' : 'cover.gif',
             'title' : 'Floptropica Radio'
         }
     ]}]};

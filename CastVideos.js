@@ -21,7 +21,7 @@
  * @const
  */
 var MEDIA_SOURCE_ROOT =
-    'https://floptropica.com/wp-content/uploads/2023/11/';
+window.location.href.replaceAll("index.html", "")+"imagefiles";
 /**
  * Width of progress bar in pixel
  * @const

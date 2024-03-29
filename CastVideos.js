@@ -21,7 +21,7 @@
  * @const
  */
 var MEDIA_SOURCE_ROOT =
-window.location.href.replaceAll("index.html", "")+"imagefiles";
+window.location.href.replaceAll("index.html", "")+"imagefiles/";
 /**
  * Width of progress bar in pixel
  * @const
